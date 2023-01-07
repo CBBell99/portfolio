@@ -5,6 +5,8 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 
+
+
 function App() {
   return (
     <div className="bg-white px-10 ">
@@ -34,10 +36,17 @@ function App() {
             Hi I'm Chris. I build full stack web apps that you will love to use.
           </p>
         </div>
-        <div>
+        <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
           <AiFillTwitterCircle />
           <AiFillLinkedin />
           <AiFillInstagram />
+        </div>
+        <div className="">
+          <img
+            className="max-h-80"
+            src={require("./images/Goku_anime_profile.webp")}
+            alt=""
+          />
         </div>
       </section>
     </div>
