@@ -3,9 +3,8 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillInstagram,
+  AiFillGithub,
 } from "react-icons/ai";
-
-
 
 function App() {
   return (
@@ -40,6 +39,9 @@ function App() {
           <AiFillTwitterCircle />
           <AiFillLinkedin />
           <AiFillInstagram />
+          <a href="https://github.com/CBBell99">
+            <AiFillGithub className="" />
+          </a>
         </div>
         <div className="">
           <img
