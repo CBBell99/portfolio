@@ -5,6 +5,10 @@ import {
   AiFillInstagram,
   AiFillGithub,
 } from "react-icons/ai";
+import cbell from "./images/chrisProfilePic.jpg";
+
+import Skills from "./components/Skills";
+import "./App.css";
 
 function App() {
   return (
@@ -43,14 +47,11 @@ function App() {
             <AiFillGithub className="" />
           </a>
         </div>
-        <div className="">
-          <img
-            className="max-h-80"
-            src={require("./images/Goku_anime_profile.webp")}
-            alt=""
-          />
+        <div className="relative mx-auto  mt-20  w-80 h-80 flex rounded-full justify-center align-center">
+          <img className="rounded-full" src={cbell} alt="" />
         </div>
       </section>
+      <Skills />
     </div>
   );
 }
