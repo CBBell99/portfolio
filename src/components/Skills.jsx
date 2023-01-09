@@ -32,17 +32,10 @@ function Skills() {
       </div>
       <div className="grid grid-cols-3 items-center">
         {skillsList.map((skill) => (
-          <>
-            <div className="mt-10 mx-auto">
-              <img
-                key={skill.skill}
-                width={skill.width}
-                src={skill.src}
-                alt=""
-              />
-              <h5 className="text-center mt-4">{skill.skill}</h5>
-            </div>
-          </>
+          <div className="mt-10 mx-auto" key={skill.id}>
+            <img width={skill.width} src={skill.src} alt="" />
+            <h5 className="text-center mt-4">{skill.skill}</h5>
+          </div>
         ))}
         {/* <div className="mt-10 mx-auto">
           <img
