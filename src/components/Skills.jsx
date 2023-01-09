@@ -1,25 +1,4 @@
-import React from "react";
-
-const skillsList = [
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
-    skill: "JavaScript",
-    width: 100,
-    id: 1,
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg",
-    skill: "Ruby",
-    width: 100,
-    id: 2,
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg",
-    skill: "CSS",
-    width: 100,
-    id: 3,
-  },
-];
+import skillsList from "../constants";
 
 function Skills() {
   return (
@@ -32,33 +11,12 @@ function Skills() {
       </div>
       <div className="grid grid-cols-3 items-center">
         {skillsList.map((skill) => (
-          <div className="mt-10 mx-auto" key={skill.id}>
+          <div className="mt-10 mx-auto" key={skill.skill}>
             <img width={skill.width} src={skill.src} alt="" />
             <h5 className="text-center mt-4">{skill.skill}</h5>
           </div>
         ))}
-        {/* <div className="mt-10 mx-auto">
-          <img
-            width={100}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
-            alt="JavaScript"
-          />
-          <h5 className="text-center mt-4">JavaScript</h5>
-        </div>
-        <div className="mt-10 mx-auto">
-          <img
-            width={100}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg"
-            alt="Ruby"
-          />
-          <h5 className="text-center mt-4">Ruby</h5>
-        </div>
-        <div className="mt-10 mx-auto ">
-          <img
-            width={100}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg"
-            alt="CSS"
-          />
+        {/* 
           <h5 className="text-center mt-4">CSS</h5>
         </div>
         <div className="mt-10 mx-auto">
