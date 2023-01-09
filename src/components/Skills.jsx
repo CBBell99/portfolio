@@ -12,7 +12,7 @@ function Skills() {
       <div className="grid grid-cols-3 items-center">
         {skillsList.map((skill) => (
           <div className="mt-10 mx-auto" key={skill.skill}>
-            <img width={skill.width} src={skill.src} alt="" />
+            <img width={100} src={skill.src} alt="" />
             <h5 className="text-center mt-4">{skill.skill}</h5>
           </div>
         ))}
@@ -54,7 +54,7 @@ function Skills() {
         <div className="mt-10 mx-auto">
           <img
             width={100}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg"
+            src=
             alt="Git"
           />
           <h5 className="text-center">Git</h5>
