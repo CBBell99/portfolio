@@ -1,13 +1,9 @@
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillInstagram,
-  AiFillGithub,
-} from "react-icons/ai";
-import cbell from "./images/chrisProfilePic.jpg";
 
+import cbell from "./images/chrisProfilePic.jpg";
+import Socials from "./components/Socials";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 import "./App.css";
 
 function App() {
@@ -37,27 +33,24 @@ function App() {
           <h3 className="text-2xl py-2">Full-Stack Web Developer</h3>
           <p className="text-medium py-5 leading-8 text-gray-800">
             Hi I'm Chris. I build full stack web apps that you will love to use.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
+            dolores quo repellat aliquam suscipit, vitae ad asperiores, quae
+            tenetur vero temporibus autem odit quos fugiat mollitia dolorum
+            illum error inventore.
           </p>
         </div>
-        <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-          <a href="https://twitter.com/Humperpump">
-            <AiFillTwitterCircle />
-          </a>
-          <a href="https://www.linkedin.com/in/chrisbeckertonbell/">
-            <AiFillLinkedin />
-          </a>
-          <a href="https://www.instagram.com/humperpump/">
-            <AiFillInstagram />
-          </a>
-          <a href="https://github.com/CBBell99">
-            <AiFillGithub className="" />
-          </a>
-        </div>
+        <Socials />
         <div className="relative mx-auto  mt-20  w-80 h-80 flex rounded-full justify-center align-center">
           <img className="rounded-full" src={cbell} alt="" />
         </div>
       </section>
       <Skills />
+      <section>
+        <div>
+          <h3 className="text-3xl py-1">Projects</h3>
+          <Projects />
+        </div>
+      </section>
     </div>
   );
 }
