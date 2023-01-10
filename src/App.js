@@ -40,9 +40,15 @@ function App() {
           </p>
         </div>
         <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-          <AiFillTwitterCircle />
-          <AiFillLinkedin />
-          <AiFillInstagram />
+          <a href="https://twitter.com/Humperpump">
+            <AiFillTwitterCircle />
+          </a>
+          <a href="https://www.linkedin.com/in/chrisbeckertonbell/">
+            <AiFillLinkedin />
+          </a>
+          <a href="https://www.instagram.com/humperpump/">
+            <AiFillInstagram />
+          </a>
           <a href="https://github.com/CBBell99">
             <AiFillGithub className="" />
           </a>
