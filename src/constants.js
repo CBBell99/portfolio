@@ -42,7 +42,11 @@ const projects = [
     name: "TinyApp",
     livesite: "",
     code: "https://github.com/CBBell99/tinyapp",
+    description:
+      "URL shortening service like tinyURL or bit.ly, used to demonstrate backend skills using Node.js and Express.js.",
+    img: "",
   },
+  { name: "Tweeter", livesite: "" },
 ];
 
 export { skillsList, projects };

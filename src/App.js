@@ -45,12 +45,8 @@ function App() {
         </div>
       </section>
       <Skills />
-      <section>
-        <div>
-          <h3 className="text-3xl py-1">Projects</h3>
-          <Projects />
-        </div>
-      </section>
+
+      <Projects />
     </div>
   );
 }
