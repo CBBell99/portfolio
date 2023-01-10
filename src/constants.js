@@ -37,6 +37,12 @@ const skillsList = [
   },
 ];
 
-const projects = [{}];
+const projects = [
+  {
+    name: "TinyApp",
+    livesite: "",
+    code: "https://github.com/CBBell99/tinyapp",
+  },
+];
 
 export { skillsList, projects };
