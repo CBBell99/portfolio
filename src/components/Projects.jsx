@@ -10,10 +10,16 @@ function Project() {
             <h3>{project.name}</h3>
             <img src={project.img} alt="" />
             {/* change below code */}
-            <div className={"flex justify-between"}>
-              <a href={project.code}>code</a>
-              {project.liveSite !== "" ? <></> : <button>LiveSite</button>}
-            </div>
+            {project.liveSite !== "" ? (
+              <div className="flex justify-start p-2">
+                <a href={project.code}>code</a>
+                <a href={project.liveSite}>live site</a>
+              </div>
+            ) : (
+              <div className="">
+                <a href={project.code}>code</a>
+              </div>
+            )}
           </div>
         ))}
       </div>
