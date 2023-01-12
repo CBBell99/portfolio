@@ -12,7 +12,7 @@ function Skills() {
       <div className="grid grid-cols-2 md:grid-cols-3  items-center">
         {skillsList.map((skill) => (
           <div className="mt-10 mx-auto" key={skill.name}>
-            <img width={100} src={skill.link} alt="" />
+            <img width={100} src={skill.src} alt="" />
             <h5 className="text-center mt-4">{skill.name}</h5>
           </div>
         ))}

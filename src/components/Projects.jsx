@@ -9,11 +9,14 @@ function Project() {
           <div className="grid-cols-1 mb-3" key={project.name}>
             <h3>{project.name}</h3>
             <img src={project.img} alt="" />
-            {/* change below code */}
             {project.liveSite !== "" ? (
-              <div className="flex justify-start p-2">
-                <a href={project.code}>code</a>
-                <a href={project.liveSite}>live site</a>
+              <div className="flex">
+                <a href={project.code}>
+                  <p className="pr-2">code</p>
+                </a>
+                <a href={project.liveSite}>
+                  <p>live site</p>
+                </a>
               </div>
             ) : (
               <div className="">
