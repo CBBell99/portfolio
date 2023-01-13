@@ -1,7 +1,7 @@
-import React from "react";
+import { projects } from "../constants";
 
 function Project() {
-  return <div>Project</div>;
+  return <div>{projects.name}</div>;
 }
 
 export default Project;
