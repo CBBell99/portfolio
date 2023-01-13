@@ -1,6 +1,7 @@
 import tinyapp from "./images/tinyapp.png";
 import githubFinder from "./images/githubFinder.png";
 import houseMarketplace from "./images/house-marketplace.png";
+import loyaltree from "./images/loyaltree.png";
 
 const skillsList = [
   {
@@ -80,7 +81,7 @@ const projects = [
     code: "https://github.com/CBBell99/loyalTree",
     description:
       "Full-Stack Web Application for small businesses to conduct gift card transactions using QR codes and users to purchase digital gift cards",
-    img: "",
+    img: loyaltree,
   },
 ];
 
