@@ -44,12 +44,12 @@ const skillsList = [
 
 const projects = [
   {
-    name: "TinyApp",
+    name: "loyalTree",
     liveSite: "",
-    code: "https://github.com/CBBell99/tinyapp",
+    code: "https://github.com/CBBell99/loyalTree",
     description:
-      "URL shortening service like tinyURL or bit.ly, used to demonstrate backend skills using Node.js and Express.js.",
-    img: tinyapp,
+      "Full-Stack Web Application for small businesses to conduct gift card transactions using QR codes and users to purchase digital gift cards",
+    img: loyaltree,
   },
   {
     name: "Github Finder",
@@ -76,12 +76,12 @@ const projects = [
   //   img: "",
   // },
   {
-    name: "loyalTree",
+    name: "TinyApp",
     liveSite: "",
-    code: "https://github.com/CBBell99/loyalTree",
+    code: "https://github.com/CBBell99/tinyapp",
     description:
-      "Full-Stack Web Application for small businesses to conduct gift card transactions using QR codes and users to purchase digital gift cards",
-    img: loyaltree,
+      "URL shortening service like tinyURL or bit.ly, used to demonstrate backend skills using Node.js and Express.js.",
+    img: tinyapp,
   },
 ];
 
