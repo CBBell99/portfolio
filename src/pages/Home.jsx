@@ -7,7 +7,7 @@ import About from "../components/About";
 
 function Home() {
   return (
-    <main className="bg-white px-10 md:px-20 lg:px-40">
+    <main className="px-10 md:px-20 lg:px-40">
       <section className="min-h-screen">
         <Navbar />
         <About />
