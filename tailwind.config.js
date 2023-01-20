@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         customGrey: "#212428",
         lightText: "#c4cfde",
+        accent: "#ff014f",
       },
       fontFamily: {
         inter: ["inter", "serif"],
