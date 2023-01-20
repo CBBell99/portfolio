@@ -3,12 +3,14 @@ import cbell from "../images/chrisProfilePic.jpg";
 
 function Navbar() {
   return (
-    <nav className="w-screen h-24 bg-customGrey flex">
-      <div className="w-screen flex bg-customGrey">
-        <img className="rounded-full h-16" src={cbell} alt="" />
-        <h3 className="text-lightText">Chris Bell</h3>
+    <nav className=" h-24 bg-customGrey">
+      <div className="flex w-screen justify-between items-center">
+        <div className="flex content-center">
+          <img className="rounded-full h-16" src={cbell} alt="" />
+          <h3 className="text-lightText">Chris Bell</h3>
+        </div>
+        <FiMenu className="text-lightText text-2xl" />
       </div>
-      <FiMenu className="text-lightText" />
     </nav>
   );
 }
