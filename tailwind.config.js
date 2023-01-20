@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        customGrey: "#212428",
+        lightText: "#c4cfde",
+      },
       fontFamily: {
         inter: ["inter", "serif"],
       },
