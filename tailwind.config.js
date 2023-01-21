@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./index.html",
@@ -13,7 +15,8 @@ module.exports = {
         accent: "#ff014f",
       },
       fontFamily: {
-        inter: ["inter", "serif"],
+        titleText: ["Montserrat", "san-seriff"],
+        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
     },
   },
