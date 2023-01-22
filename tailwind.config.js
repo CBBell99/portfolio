@@ -10,8 +10,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        customGrey: "#212428",
-        lightText: "#c4cfde",
+        greyDark: "#212428",
+        greyLight: "#c4cfde",
         accent: "#ff014f",
       },
       fontFamily: {
