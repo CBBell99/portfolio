@@ -34,16 +34,19 @@ function Navbar() {
   const mobile = (
     <div
       className="w-[80%] h-screen absolute top-0 right-0 bg-black
-     p-4 opacity-100"
+     p-4 z-10"
     >
-      <span className="absolute top-4 right-4 text-gray-400 hover:text-designColor duration-300 text-2xl cursor-pointer">
-        <MdClose onClick={mobileMenuHandler} />
+      <span
+        className="absolute top-7 right-5 text-gray-400 hover:text-designColor text-4xl cursor-pointer"
+        onClick={mobileMenuHandler}
+      >
+        <MdClose />
       </span>
     </div>
   );
 
   return (
-    <nav className="sticky w-full h-24 bg-greyDark text-greyLight px-4">
+    <nav className="sticky w-full h-24 bg-greyDark text-greyLight px-4 z-10">
       <div className="flex h-full justify-between items-center border-b border-b-gray-600">
         <div className="flex gap-1 items-center justify-center">
           <span className="flex justify-center items-center bg-black rounded-full text-2xl text-accent w-10 h-10">
