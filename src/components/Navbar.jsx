@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FaBars, FaCode } from "react-icons/fa";
-
-import cbell from "../images/chrisProfilePic.jpg";
+import { MdClose } from "react-icons/md";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +31,16 @@ function Navbar() {
     </ul>
   );
 
-  const mobile = "";
+  const mobile = (
+    <div
+      className="w-[80%] h-screen absolute top-0 right-0 bg-black
+     p-4 opacity-100"
+    >
+      <span className="absolute top-4 right-4 text-gray-400 hover:text-designColor duration-300 text-2xl cursor-pointer">
+        <MdClose onClick={mobileMenuHandler} />
+      </span>
+    </div>
+  );
 
   return (
     <nav className="sticky w-full h-24 bg-greyDark text-greyLight px-4">
@@ -45,6 +53,7 @@ function Navbar() {
         </div>
         {burgerMenu}
         {desktopMenu}
+        {isOpen && mobile}
       </div>
     </nav>
   );

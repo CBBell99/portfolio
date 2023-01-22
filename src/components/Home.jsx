@@ -18,7 +18,7 @@ function Home() {
         <h1 className=" text-3xl sm:text-6xl  text-greyLight font-bold font-titleText ">
           Hi, I'm <span className="text-accent">Chris </span>and I'm a
           <span> {text}</span>
-          <Cursor cursorColor="#ff014f" />
+          <Cursor cursorBlinking="false" cursorColor="#ff014f" />
         </h1>
       </div>
       <div className="flex justify-center">
