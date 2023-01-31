@@ -1,14 +1,15 @@
-import React from "react";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
-import cbell from "../images/chrisProfilePic.jpg";
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+
+import cbell from '../images/chrisProfilePic.jpg';
 
 function Home() {
   const [text] = useTypewriter({
     words: [
-      "Professional Chef.",
-      "Full Stack Web Developer.",
-      "friend.",
-      "Full Stack Web Developer.",
+      'Professional Chef.',
+      'Full Stack Web Developer.',
+      'friend.',
+      'Full Stack Web Developer.',
     ],
     loop: 1,
   });
@@ -32,8 +33,22 @@ function Home() {
           fast-paced training program for 12 weeks.
         </p>
       </div>
-      <div className="max-h- flex justify-center rounded-full overflow-hidden">
+      <div className="max-h- flex justify-center rounded-full overflow-hidden mt-10">
         <img src={cbell} alt="" className="max-h-full max-w-full" />
+      </div>
+      <div className="mt-10">
+        <h2 className="text-greyLight">CONNECT WITH ME</h2>
+        <div className="flex gap-4 mt-10 ">
+          <span className="icon">
+            <FaGithub />
+          </span>
+          <span className="icon">
+            <FaInstagram />
+          </span>
+          <span className="icon">
+            <FaLinkedin />
+          </span>
+        </div>
       </div>
     </section>
   );

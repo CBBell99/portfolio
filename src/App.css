@@ -1,7 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   top: 0;
   left: 0;
-        
   background-color: #212428;
 }
 
@@ -9,3 +12,25 @@ body {
   max-width: 80%;
   max-height: 80%;
 }
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .375rem;
+  font-size: 1.25rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(0,0,0,.25);
+  color :white;
+  box-shadow: 10px 10px 20px #1c1e22;
+}
+
+.icon:hover{
+  color: #ff014f;
+  cursor: pointer;
+  transform: translateY(-0.25rem);
+  transition-duration: 300ms;
+  background-color: rgba(0,0,0,.4);
+}
+/* w-16 h-16 bg-black bg-opacity-25 text-greyLight text-xl inline-flex items-center justify-center rounded-md shadow-shadowOne hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-accent cursor-pointer duration-300; */

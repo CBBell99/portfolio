@@ -3,44 +3,7 @@ import githubFinder from "./images/githubFinder.png";
 import houseMarketplace from "./images/house-marketplace.png";
 import loyaltree from "./images/loyaltree.png";
 
-const skillsList = [
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
-    name: "JavaScript",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg",
-    name: "Ruby",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg",
-    name: "CSS",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
-    name: "TailwindCSS",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg",
-    name: "NodeJS",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
-    name: "React",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg",
-    name: "PostgreSQL",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg",
-    name: "Git",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg",
-    name: "Express.js",
-  },
-];
+
 
 const projects = [
   {
@@ -85,4 +48,4 @@ const projects = [
   },
 ];
 
-export { skillsList, projects };
+export { projects };
