@@ -19,7 +19,7 @@ function Skills() {
   return (
     <section className="mx-5">
       <h2 className="pt-10 px-5 text-greyLight">SKILLS</h2>
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-4 gap-5 mt-10">
         <span className="icon">
           <SiJavascript />
         </span>
