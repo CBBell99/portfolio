@@ -4,17 +4,22 @@ import { FaGithub } from 'react-icons/fa';
 import { SlGlobe } from 'react-icons/sl';
 
 function ProjectListItem() {
-  console.log(projects);
   return projects.map((project) => {
     return (
-      <div>
-        <img src={project.img} alt="" />
+      <div className="w-full bg-black my-5 bg-opacity-25 rounded-lg ">
         <div>
-          <h3>{project.name}</h3>
+          <img
+            className="mx-auto p-5 rounded-2xl group-hover:scale-125 duration-300"
+            src={project.img}
+            alt=""
+          />
+        </div>
+        <div>
+          <h3 className="text-accent pl-5">{project.name.toUpperCase()}</h3>
           <FaGithub />
           <SlGlobe />
         </div>
-        <p></p>
+        <p className="text-greyLight text-sm">{project.description}</p>
       </div>
     );
   });
