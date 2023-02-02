@@ -8,7 +8,6 @@ import loyaltree from "./images/loyaltree.png";
 const projects = [
   {
     name: 'loyalTree',
-    liveSite: '',
     code: 'https://github.com/CBBell99/loyalTree',
     description:
       'Full-Stack Web Application for small businesses to conduct gift card transactions using QR codes and users to purchase digital gift cards',
@@ -40,7 +39,6 @@ const projects = [
   // },
   {
     name: 'TinyApp',
-    liveSite: '',
     code: 'https://github.com/CBBell99/tinyapp',
     description:
       'URL shortening service like tinyURL or bit.ly, used to demonstrate backend skills using Node.js and Express.js.',

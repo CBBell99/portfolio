@@ -50,9 +50,13 @@ function Navbar() {
       </div>
       <div className="flex justify-end my-5">
         <ul className="flex flex-col gap-5">
-          <li className="text-2xl">Home</li>
+          <a href="#home">
+            <li className="text-2xl">Home</li>
+          </a>
           <li className="text-2xl">Projects</li>
-          <li className="text-2xl">Resume</li>
+          <a href="https://resume.creddle.io/resume/20aimu9xvnb">
+            <li className="text-2xl">Resume</li>
+          </a>
           <li className="text-2xl">Contact</li>
         </ul>
       </div>
