@@ -13,7 +13,6 @@ function Navbar() {
 
   const mobileMenuHandler = () => {
     setIsOpen(!isOpen);
-    console.log("clicked");
   };
 
   const burgerMenu = (
@@ -54,7 +53,11 @@ function Navbar() {
             <li className="text-2xl">Home</li>
           </a>
           <li className="text-2xl">Projects</li>
-          <a href="https://resume.creddle.io/resume/20aimu9xvnb">
+          <a
+            href="https://resume.creddle.io/resume/20aimu9xvnb"
+            target="_blank"
+            rel="noreferrer"
+          >
             <li className="text-2xl">Resume</li>
           </a>
           <li className="text-2xl">Contact</li>

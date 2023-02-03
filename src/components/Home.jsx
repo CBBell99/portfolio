@@ -37,7 +37,7 @@ function Home() {
         <img src={cbell} alt="" className="max-h-full max-w-full" />
       </div>
       <div className="mt-10">
-        <h2 className="text-greyLight">CONNECT WITH ME</h2>
+        <h2 className="text-greyLight">LET'S GET IN TOUCH</h2>
         <div className="flex gap-4 mt-10 ">
           <span className="icon">
             <FaGithub />
