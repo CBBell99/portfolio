@@ -1,0 +1,16 @@
+.menu-bar1 {
+  transform: rotate(-45deg);
+  transform-origin: top right;
+  transition: transform 100ms ease-in-out;
+}
+
+.menu-bar2{
+  opacity: 0;
+  /* transition: transform 100ms ease-in-out; */
+}
+
+.menu-bar3 {
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+  transition: transform 100ms ease-in-out;
+}
