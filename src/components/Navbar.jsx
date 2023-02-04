@@ -19,7 +19,7 @@ function Navbar() {
   const burgerMenu = (
     <span
       onClick={mobileMenuHandler}
-      className="md:hidden absolute top-7 right-4 text-xl  text-accent bg-black w-10 h-10 flex flex-col gap-[5.5px] items-center justify-center  cursor-pointer rounded-sm"
+      className="md:hidden absolute top-7 right-4 text-xl  text-accent bg-black w-9 h-9 flex flex-col gap-[5.5px] items-center justify-center  cursor-pointer rounded-sm"
     >
       <span
         className={`w-6 h-[2.5px] bg-white ${isOpen ? 'menu-bar1' : ''}`}
