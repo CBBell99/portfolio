@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaCode, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import './Navbar.css';
+import { socials } from '../constants';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,6 +9,8 @@ function Navbar() {
   const mobileMenuHandler = () => {
     setIsOpen(!isOpen);
   };
+
+  console.log(socials);
 
   const burgerMenu = (
     <div
@@ -42,24 +45,41 @@ function Navbar() {
       }`}
     >
       <ul className="mt-20 text-center flex flex-col gap-5">
-        <li className="text-4xl ">HOME</li>
-        <li className="text-4xl ">PROJECTS</li>
-        <li className="text-4xl">RESUME</li>
-        <li className="text-4xl">CONTACT</li>
+        <a href="#home">
+          <li className="text-4xl hover:text-accent">HOME</li>
+        </a>
+        <li className="text-4xl hover:text-accent ">PROJECTS</li>
+        <li className="text-4xl hover:text-accent">RESUME</li>
+        <li className="text-4xl hover:text-accent">CONTACT</li>
       </ul>
       <div className="mt-8">
         <h2 className="text-center">FOLLOW ME ON</h2>
       </div>
-      <div className="flex mt-8 mb-5 mx-10 justify-between">
-        <span className="icon">
+      <div className="flex mt-8 mb-5 mx-10 gap-5 justify-center">
+        <a
+          href={socials.github}
+          target="_blank"
+          rel="noreferrer"
+          className="icon"
+        >
           <FaGithub />
-        </span>
-        <span className="icon">
+        </a>
+        <a
+          href={socials.instagram}
+          target="_blank"
+          rel="noreferrer"
+          className="icon"
+        >
           <FaInstagram />
-        </span>
-        <span className="icon">
+        </a>
+        <a
+          href={socials.linkedin}
+          target="_blank"
+          rel="noreferrer"
+          className="icon"
+        >
           <FaLinkedin />
-        </span>
+        </a>
       </div>
     </div>
   );

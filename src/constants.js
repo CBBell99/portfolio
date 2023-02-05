@@ -46,4 +46,9 @@ const projects = [
   },
 ];
 
-export { projects };
+const socials = {
+  github: 'https://github.com/CBBell99',
+  instagram: 'https://www.instagram.com/humperpump/',
+  linkedin: 'https://www.linkedin.com/in/chrisbeckertonbell/',
+};
+export { projects, socials };
