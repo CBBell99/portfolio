@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FaCode, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
-import { MdClose } from 'react-icons/md';
 import './Navbar.css';
 
 function Navbar() {
@@ -38,31 +37,29 @@ function Navbar() {
   // mobile menu
   const mobile = (
     <div
-      className={`w-[200px] min-h-[400px] absolute top-[1rem] right-[-3rem] bg-black p-4 z-10 rounded-lg mobile ${
+      className={`w-full absolute top-0 right-[-3rem] bg-greyDark p-4 rounded-lg shadow-sm shadow-gray-500 mobile ${
         isOpen ? 'open' : ''
       }`}
     >
-      <div className="w-full text-gray-400 hover:text-designColor text-4xl cursor-pointer flex justify-end"></div>
-      <div className="flex justify-end my-5">
-        <ul className="flex flex-col gap-5">
-          <a href="#home">
-            <li className="text-2xl">Home</li>
-          </a>
-          <li className="text-2xl">Projects</li>
-          <a
-            href="https://resume.creddle.io/resume/20aimu9xvnb"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <li className="text-2xl">Resume</li>
-          </a>
-          <li className="text-2xl">Contact</li>
-        </ul>
+      <ul className="mt-20 text-center flex flex-col gap-5">
+        <li className="text-4xl ">HOME</li>
+        <li className="text-4xl ">PROJECTS</li>
+        <li className="text-4xl">RESUME</li>
+        <li className="text-4xl">CONTACT</li>
+      </ul>
+      <div className="mt-8">
+        <h2 className="text-center">FOLLOW ME ON</h2>
       </div>
-      <div className="flex justify-between mt">
-        <FaGithub />
-        <FaLinkedin />
-        <FaInstagram />
+      <div className="flex mt-8 mb-5 mx-10 justify-between">
+        <span className="icon">
+          <FaGithub />
+        </span>
+        <span className="icon">
+          <FaInstagram />
+        </span>
+        <span className="icon">
+          <FaLinkedin />
+        </span>
       </div>
     </div>
   );
