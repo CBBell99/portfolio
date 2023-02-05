@@ -17,22 +17,13 @@ function Navbar() {
   };
 
   const burgerMenu = (
-    <span
-      onClick={mobileMenuHandler}
-      className="md:hidden absolute top-7 right-4 text-xl  text-accent bg-black w-9 h-9 flex flex-col gap-[5.5px] items-center justify-center  cursor-pointer rounded-sm"
-    >
-      <span
-        className={`w-6 h-[2.5px] bg-white ${isOpen ? 'menu-bar1' : ''}`}
-      ></span>
-      <span
-        className={`w-6 h-[2.5px] bg-white ${isOpen ? 'menu-bar2' : ''}`}
-      ></span>
-      <span
-        className={`w-6 h-[2.5px] bg-white ${isOpen ? 'menu-bar3' : ''}`}
-      ></span>
-
-      {/* <FaBars /> */}
-    </span>
+    <div class={`menu-btn ${isOpen ? 'open' : ''}`} onClick={mobileMenuHandler}>
+      <div
+        class={`menu-btn__burger bg-accent before:bg-accent after:bg-accent ${
+          isOpen ? 'open' : ''
+        }`}
+      ></div>
+    </div>
   );
 
   // fullscreen nav
@@ -93,7 +84,7 @@ function Navbar() {
         </div>
         {burgerMenu}
         {desktopMenu}
-        {/* {isOpen && mobile} */}
+        {isOpen && mobile}
       </div>
     </nav>
   );
