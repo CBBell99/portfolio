@@ -1,12 +1,6 @@
 import { useState } from "react";
-import {
-  FaBars,
-  FaCode,
-  FaGithub,
-  FaLinkedin,
-  FaInstagram,
-} from "react-icons/fa";
-import { MdClose } from "react-icons/md";
+import { FaCode, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { MdClose } from 'react-icons/md';
 import './Navbar.css';
 
 function Navbar() {
@@ -17,9 +11,12 @@ function Navbar() {
   };
 
   const burgerMenu = (
-    <div class={`menu-btn ${isOpen ? 'open' : ''}`} onClick={mobileMenuHandler}>
+    <div
+      class={`menu-btn  ${isOpen ? 'open' : ''}`}
+      onClick={mobileMenuHandler}
+    >
       <div
-        class={`menu-btn__burger bg-accent before:bg-accent after:bg-accent ${
+        class={`menu-btn__burger md:hidden z-20 bg-accent before:bg-accent after:bg-accent ${
           isOpen ? 'open' : ''
         }`}
       ></div>
@@ -41,14 +38,11 @@ function Navbar() {
   // mobile menu
   const mobile = (
     <div
-      className="w-[40%] min-h-[400px] absolute top-3 right-1 bg-black
-     p-4 z-10 rounded-lg"
+      className={`w-[200px] min-h-[400px] absolute top-[1rem] right-[-3rem] bg-black p-4 z-10 rounded-lg mobile ${
+        isOpen ? 'open' : ''
+      }`}
     >
-      <div className="w-full text-gray-400 hover:text-designColor text-4xl cursor-pointer flex justify-end">
-        <span className="" onClick={mobileMenuHandler}>
-          <MdClose />
-        </span>
-      </div>
+      <div className="w-full text-gray-400 hover:text-designColor text-4xl cursor-pointer flex justify-end"></div>
       <div className="flex justify-end my-5">
         <ul className="flex flex-col gap-5">
           <a href="#home">
@@ -84,7 +78,7 @@ function Navbar() {
         </div>
         {burgerMenu}
         {desktopMenu}
-        {isOpen && mobile}
+        {mobile}
       </div>
     </nav>
   );

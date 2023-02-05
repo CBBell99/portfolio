@@ -40,3 +40,13 @@
 .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg) translate(-35px, -35px);
 }
+
+.mobile {
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.mobile.open {
+  transform: translateX(-3rem);
+  opacity: 1;
+}
