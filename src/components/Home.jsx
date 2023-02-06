@@ -17,14 +17,14 @@ function Home() {
   return (
     <section id="home" className="pt-10 px-5">
       <div className="flex justify-center">
-        <h1 className=" text-3xl sm:text-6xl  text-greyLight font-bold font-titleText max-w-4xl">
+        <h1 className=" text-3xl sm:text-6xl  text-greyLight font-bold font-titleText ">
           Hi, I'm <span className="text-accent">Chris </span>and I'm a
           <span> {text}</span>
           <Cursor cursorBlinking="false" cursorColor="#ff014f" />
         </h1>
       </div>
       <div className="flex justify-center">
-        <p className="pt-5 text-greyLight max-w-4xl">
+        <p className="pt-5 text-greyLight max-w-5xl">
           I am a <b>Full Stack Web Developer</b> transitioning from a career as
           a chef with a passion for creating innovative and visually appealing
           digital experiences. I've always had a passion for technology and
@@ -34,8 +34,8 @@ function Home() {
         </p>
       </div>
       <div className="md:flex md:flex-row-reverse justify-between">
-        <div className="flex justify-center rounded-full overflow-hidden mt-10">
-          <img src={cbell} alt="" className="md:" />
+        <div className="flex justify-center items-center mt-10 md:object-contain">
+          <img src={cbell} alt="" className="profile rounded-full " />
         </div>
         <Skills />
       </div>
