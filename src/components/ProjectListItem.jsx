@@ -14,7 +14,7 @@ function ProjectListItem() {
             alt=""
           />
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <h3 className="text-accent pl-5">{project.name.toUpperCase()}</h3>
           <div className="flex gap-3 pr-5">
             <a
@@ -36,7 +36,7 @@ function ProjectListItem() {
           </div>
         </div>
         <p
-          className="text-greyLight text-sm
+          className="text-greyLight text-sm pb-3
         m-5"
         >
           {project.description}
