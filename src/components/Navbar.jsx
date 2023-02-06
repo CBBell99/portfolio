@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaCode, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import './Navbar.css';
 import { socials } from '../constants';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,12 +29,30 @@ function Navbar() {
   // fullscreen nav
   const desktopMenu = (
     <ul className="md:flex hidden gap-6 md:gap-10">
-      <li className="hover:text-accent cursor-pointer">Home</li>
-      <li className="hover:text-accent cursor-pointer">Projects</li>
+      <li className="hover:text-accent cursor-pointer">
+        <Link to="home" spy={true} offset={-75} duration={500} smooth={true}>
+          Home
+        </Link>
+      </li>
+      <li className="hover:text-accent cursor-pointer">
+        <Link
+          to="projects"
+          spy={true}
+          offset={-100}
+          duration={500}
+          smooth={true}
+        >
+          Projects
+        </Link>
+      </li>
       <a href="https://resume.creddle.io/resume/20aimu9xvnb">
         <li className="hover:text-accent cursor-pointer">Resume</li>
       </a>
-      <li className="hover:text-accent cursor-pointer">Contact</li>
+      <li className="hover:text-accent cursor-pointer">
+        <Link to="contact" offset={-75} duration={500} smooth={true}>
+          Contact
+        </Link>
+      </li>
     </ul>
   );
 
@@ -45,9 +64,8 @@ function Navbar() {
       }`}
     >
       <ul className="mt-20 text-center flex flex-col gap-5">
-        <a href="#home">
-          <li className="text-4xl hover:text-accent">HOME</li>
-        </a>
+        <li className="text-4xl hover:text-accent">HOME</li>
+
         <li className="text-4xl hover:text-accent ">PROJECTS</li>
         <li className="text-4xl hover:text-accent">RESUME</li>
         <li className="text-4xl hover:text-accent">CONTACT</li>
