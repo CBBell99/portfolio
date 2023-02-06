@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="max-w-screen-xl mx-auto">
+      <div className="max-w-screen-lg mx-auto">
         <Home />
         <Skills />
         <ProjectsList />

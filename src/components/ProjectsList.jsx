@@ -5,7 +5,9 @@ function Projects() {
   return (
     <section className="mt-10 mx-5">
       <h2 className="text-greyLight text-2xl text-center">PROJECTS</h2>
-      <ProjectListItem />
+      <div className="md:grid md:grid-cols-2 gap-5">
+        <ProjectListItem />
+      </div>
     </section>
   );
 }
