@@ -1,6 +1,5 @@
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
-import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
-import { socials } from '../constants';
+
 
 import cbell from '../images/chrisProfilePic.jpg';
 
@@ -36,35 +35,6 @@ function Home() {
       </div>
       <div className="max-h- flex justify-center rounded-full overflow-hidden mt-10">
         <img src={cbell} alt="" className="max-h-full max-w-full" />
-      </div>
-      <div className="mt-10">
-        <h2 className="text-greyLight">LET'S GET IN TOUCH</h2>
-        <div className="flex gap-4 mt-10 ">
-          <a
-            href={socials.github}
-            target="_blank"
-            rel="noreferrer"
-            className="icon"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href={socials.instagram}
-            target="_blank"
-            rel="noreferrer"
-            className="icon"
-          >
-            <FaInstagram />
-          </a>
-          <a
-            href={socials.linkedin}
-            target="_blank"
-            rel="noreferrer"
-            className="icon"
-          >
-            <FaLinkedin />
-          </a>
-        </div>
       </div>
     </section>
   );
