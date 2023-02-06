@@ -9,9 +9,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="max-w-screen-lg mx-auto">
+      <div className="max-w-4xl mx-auto">
         <Home />
-        <Skills />
         <ProjectsList />
         <ContactForm />
       </div>

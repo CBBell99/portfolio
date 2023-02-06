@@ -1,6 +1,6 @@
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
-
+import Skills from './Skills';
 import cbell from '../images/chrisProfilePic.jpg';
 
 function Home() {
@@ -33,8 +33,11 @@ function Home() {
           fast-paced training program for 12 weeks.
         </p>
       </div>
-      <div className="max-h- flex justify-center rounded-full overflow-hidden mt-10">
-        <img src={cbell} alt="" className="max-h-full max-w-full" />
+      <div className="md:flex justify-between">
+        <div className="flex justify-center rounded-full overflow-hidden mt-10">
+          <img src={cbell} alt="" className="md:" />
+        </div>
+        <Skills />
       </div>
     </section>
   );

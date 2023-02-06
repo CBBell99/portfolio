@@ -19,7 +19,7 @@ import { socials } from '../constants';
 
 function Skills() {
   return (
-    <>
+    <section>
       <div className="mt-10">
         <h2 className="text-greyLight">LET'S GET IN TOUCH</h2>
         <div className="flex gap-4 mt-10 ">
@@ -49,9 +49,9 @@ function Skills() {
           </a>
         </div>
       </div>
-      <section className="mx-5">
-        <h2 className="pt-10 px-5 text-greyLight">SKILLS</h2>
-        <div className="grid grid-cols-4 gap-5 mt-10">
+      <section>
+        <h2 className="pt-10  text-greyLight">SKILLS</h2>
+        <div className="grid grid-cols-4 md:grid-cols-3 gap-4 mt-10">
           <span className="icon">
             <SiJavascript />
           </span>
@@ -93,7 +93,7 @@ function Skills() {
           </span>
         </div>
       </section>
-    </>
+    </section>
   );
 }
 
