@@ -85,7 +85,7 @@ function Navbar() {
   );
 
   return (
-    <nav className="sticky top-0 w-full h-24 bg-greyDark text-greyLight px-4 md:px14 z-10">
+    <nav className="sticky top-0 w-full h-24 bg-greyDark text-greyLight px-4 md:px-14 z-10">
       <div className="flex h-full justify-between items-center border-b border-b-gray-600">
         <div className="flex gap-1 items-center justify-center">
           <span className="flex justify-center items-center bg-black rounded-full text-2xl text-accent w-10 h-10">
