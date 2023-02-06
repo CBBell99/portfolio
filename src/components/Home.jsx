@@ -33,7 +33,7 @@ function Home() {
           fast-paced training program for 12 weeks.
         </p>
       </div>
-      <div className="md:flex justify-between">
+      <div className="md:flex md:flex-row-reverse justify-between">
         <div className="flex justify-center rounded-full overflow-hidden mt-10">
           <img src={cbell} alt="" className="md:" />
         </div>
