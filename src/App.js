@@ -11,7 +11,7 @@ function App() {
       <div className="max-w-5xl mx-auto">
         <Home />
         <ProjectsList />
-        {/* <ContactForm /> */}
+        <ContactForm />
       </div>
     </>
   );

@@ -29,16 +29,33 @@ function ContactForm() {
       <h2 className="text-greyLight text-2xl text-center">ContactForm</h2>
       <div>
         <form ref={form} onSubmit={sendEmail}>
-          <div>
-            <label className="text-greyLight">Name</label>
-            <input type="text" name="from_name" />
-            <label className="text-greyLight">Email</label>
-            <input type="email" name="user_email" />
-            <label className="text-greyLight">Message</label>
-            <textarea name="message" />
-            <div className="text-greyLight border">
-              <input type="submit" value="Send" />
+          <div className="flex gap-5">
+            <div className="border rounded-md overflow-hidden w-1/2">
+              <label htmlFor="from_name" />
+              <input
+                type="text"
+                name="from_name"
+                placeholder="Name"
+                required
+                className="w-full"
+              />
             </div>
+            <div className="border rounded-md overflow-hidden w-1/2">
+              <label htmlFor="user_email" />{' '}
+              <input
+                type="email"
+                name="user_email"
+                placeholder="Email Address"
+                required
+                className="w-full"
+              />
+            </div>
+          </div>
+          <div className="border rounded-md overflow-hidden h-60 ">
+            <textarea name="message" required className="w-full h-full" />
+          </div>
+          <div className="text-greyLight border">
+            <input type="submit" value="Send" />
           </div>
         </form>
       </div>
