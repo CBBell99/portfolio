@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaCode, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import './Navbar.css';
 import { socials } from '../constants';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,15 +11,13 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
-  console.log(socials);
-
   const burgerMenu = (
     <div
-      class={`menu-btn  ${isOpen ? 'open' : ''}`}
+      className={`menu-btn  ${isOpen ? 'open' : ''}`}
       onClick={mobileMenuHandler}
     >
       <div
-        class={`menu-btn__burger md:hidden z-20 bg-accent before:bg-accent after:bg-accent ${
+        className={`menu-btn__burger md:hidden z-20 bg-accent before:bg-accent after:bg-accent ${
           isOpen ? 'open' : ''
         }`}
       ></div>
@@ -29,12 +27,12 @@ function Navbar() {
   // fullscreen nav
   const desktopMenu = (
     <ul className="md:flex hidden gap-6 md:gap-10">
-      <li className="hover:text-accent cursor-pointer">
+      <li className="hover:text-accent cursor-pointer text-xl">
         <Link to="home" spy={true} offset={-75} duration={500} smooth={true}>
           Home
         </Link>
       </li>
-      <li className="hover:text-accent cursor-pointer">
+      <li className="hover:text-accent cursor-pointer text-xl">
         <Link
           to="projects"
           spy={true}
@@ -45,10 +43,14 @@ function Navbar() {
           Projects
         </Link>
       </li>
-      <a href="https://resume.creddle.io/resume/20aimu9xvnb">
-        <li className="hover:text-accent cursor-pointer">Resume</li>
+      <a
+        href="https://resume.creddle.io/resume/20aimu9xvnb"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <li className="hover:text-accent cursor-pointer text-xl">Resume</li>
       </a>
-      <li className="hover:text-accent cursor-pointer">
+      <li className="hover:text-accent cursor-pointer text-xl">
         <Link to="contact" offset={-75} duration={500} smooth={true}>
           Contact
         </Link>
