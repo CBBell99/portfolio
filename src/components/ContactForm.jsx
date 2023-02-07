@@ -29,13 +29,17 @@ function ContactForm() {
       <h2 className="text-greyLight text-2xl text-center">ContactForm</h2>
       <div>
         <form ref={form} onSubmit={sendEmail}>
-          <label>Name</label>
-          <input type="text" name="from_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Message</label>
-          <textarea name="message" />
-          <input type="submit" value="Send" />
+          <div>
+            <label className="text-greyLight">Name</label>
+            <input type="text" name="from_name" />
+            <label className="text-greyLight">Email</label>
+            <input type="email" name="user_email" />
+            <label className="text-greyLight">Message</label>
+            <textarea name="message" />
+            <div className="text-greyLight border">
+              <input type="submit" value="Send" />
+            </div>
+          </div>
         </form>
       </div>
     </section>
