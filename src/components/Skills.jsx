@@ -22,7 +22,7 @@ function Skills() {
     <section>
       <div className="mt-10">
         <h2 className="text-greyLight">LET'S GET IN TOUCH</h2>
-        <div className="flex gap-4 mt-10 ">
+        <div className="flex gap-6 mt-10 ">
           <a
             href={socials.github}
             target="_blank"

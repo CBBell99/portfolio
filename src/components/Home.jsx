@@ -26,16 +26,16 @@ function Home() {
       <div className="flex justify-center">
         <p className="pt-5 text-greyLight max-w-5xl">
           I am a <b>Full Stack Web Developer</b> transitioning from a career as
-          a chef with a passion for creating innovative and visually appealing
-          digital experiences. I've always had a passion for technology and
-          decided to take a leap of faith and make a career change. I graduated
-          from Lighthouse Labs in 2022, where I went through an intensive and
-          fast-paced training program for 12 weeks.
+          a head chef with a passion for creating innovative and visually
+          appealing digital experiences. I've always had a passion for
+          technology and decided to take a leap of faith and make a career
+          change. I graduated from Lighthouse Labs in 2022, where I went through
+          an intensive and fast-paced training program for 12 weeks.
         </p>
       </div>
       <div className="md:flex md:flex-row-reverse justify-between">
         <div className="flex justify-center items-center mt-10 md:object-contain">
-          <img src={cbell} alt="" className="profile rounded-full " />
+          <img src={cbell} alt="" className="profile rounded-full mx-auto" />
         </div>
         <Skills />
       </div>

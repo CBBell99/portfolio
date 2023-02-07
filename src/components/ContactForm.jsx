@@ -27,32 +27,38 @@ function ContactForm() {
   return (
     <section id="contact" className="mx-5">
       <h2 className="text-greyLight text-2xl text-center">ContactForm</h2>
-      <div>
+      <div className="p-5 bg-black bg-opacity-25 rounded-lg">
         <form ref={form} onSubmit={sendEmail}>
-          <div className="flex gap-5">
-            <div className="border rounded-md overflow-hidden w-1/2">
+          <div className="flex gap-5 mb-5">
+            <div className=" w-1/2">
               <label htmlFor="from_name" />
+              <p className="text-greyLight pb-2">Name</p>
               <input
                 type="text"
                 name="from_name"
-                placeholder="Name"
+                placeholder="Your Full Name"
                 required
-                className="w-full"
+                className="w-full rounded-lg p-2"
               />
             </div>
-            <div className="border rounded-md overflow-hidden w-1/2">
+            <div className=" w-1/2">
+              <p className="text-greyLight pb-2">Email</p>
               <label htmlFor="user_email" />{' '}
               <input
                 type="email"
                 name="user_email"
-                placeholder="Email Address"
+                placeholder="Your Email Address"
                 required
-                className="w-full"
+                className="w-full rounded-lg p-2"
               />
             </div>
           </div>
-          <div className="border rounded-md overflow-hidden h-60 ">
-            <textarea name="message" required className="w-full h-full" />
+          <div className="h-48 ">
+            <textarea
+              name="message"
+              required
+              className="w-full h-full rounded-md"
+            />
           </div>
           <div className="text-greyLight border">
             <input type="submit" value="Send" />
