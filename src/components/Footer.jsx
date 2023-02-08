@@ -7,10 +7,9 @@ console.log(year);
 
 return (
   <footer className="h-24 p-4 md:px-14 ">
-    <div className="border-t h-full border-t-gray-600 flex justify-between items-end">
-      <p className="text-greyLight">created by Chris Bell</p>
+    <div className="border-t h-full border-t-gray-600 flex justify-end items-end">
       <p className="text-greyLight">
-        all rights reserved <span>&copy;</span> {year} Chris Bell
+        Created <b>by</b> Chris Bell &copy; {year}
       </p>
     </div>
   </footer>
