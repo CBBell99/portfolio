@@ -1,0 +1,17 @@
+.slider {
+  background-image: linear-gradient(90deg, #373c42 0%, #373c42 50%, #ff014f 50%, #ff014f 100%);
+  background-size: 200%;
+  transition: background-position .3s cubic-bezier(.47, .1, 1, .63),
+        color .2s linear;
+      transition-delay: 0.0s, 0.15s;
+}
+
+.slider:hover {
+  background-position: -100% 100%;
+  background-color: #ff014f;
+}
+
+.slider:active {
+  transition: scale .1s ease-in-out;
+  transform: scale(.99);
+}

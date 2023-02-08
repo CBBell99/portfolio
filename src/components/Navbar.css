@@ -43,11 +43,13 @@
 
 .mobile {
   z-index: -10;
+  visibility: hidden;
   opacity: 0;
   transition: all 300ms ease-in-out;
 }
 
 .mobile.open {
+  visibility: visible;
   z-index: 10;
   transform: translateX(-3rem);
   opacity: 1;

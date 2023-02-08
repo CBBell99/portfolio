@@ -1,5 +1,6 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import './ContactForm.css';
 
 function ContactForm() {
   const form = useRef();
@@ -39,7 +40,7 @@ function ContactForm() {
                 name="from_name"
                 placeholder="Your Full Name"
                 required
-                className="w-full rounded-lg p-2"
+                className="w-full rounded-lg p-3"
               />
             </div>
             <div className=" w-1/2">
@@ -51,7 +52,7 @@ function ContactForm() {
                 name="user_email"
                 placeholder="Your Email Address"
                 required
-                className="w-full rounded-lg p-2"
+                className="w-full rounded-lg p-3 active:border-color-accent"
               />
             </div>
           </div>
@@ -61,13 +62,14 @@ function ContactForm() {
           </label>
           <div className="h-48 mb-5">
             <textarea
+              placeholder="Your message here"
               name="message"
               required
               className="w-full h-full rounded-md"
             />
           </div>
 
-          <button className="rounded-lg w-full bg-greyMid text-greyLight py-1 hover:bg-accent hover:ease-in-out">
+          <button className="rounded-lg w-full bg-greyMid text-greyLight py-1 slider">
             Send
           </button>
         </form>
