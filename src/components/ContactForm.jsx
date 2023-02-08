@@ -49,8 +49,8 @@ function ContactForm() {
   };
 
   return (
-    <section id="contact" className="mx-5">
-      <h2 className="text-greyLight text-2xl text-center">Let's Connect</h2>
+    <section id="contact" className="mx-5 my-10">
+      <h2 className="text-greyLight text-2xl text-center m-5">Let's Connect</h2>
       <div className="p-5 bg-black bg-opacity-25 rounded-lg">
         <form ref={form} onSubmit={sendEmail}>
           <div className="md:flex gap-5 mb-">
