@@ -31,8 +31,9 @@ function ContactForm() {
         <form ref={form} onSubmit={sendEmail}>
           <div className="flex gap-5 mb-5">
             <div className=" w-1/2">
-              <label htmlFor="from_name" />
-              <p className="text-greyLight pb-2">Name</p>
+              <label htmlFor="from_name">
+                <p className="text-greyLight pb-2">Name</p>
+              </label>
               <input
                 type="text"
                 name="from_name"
@@ -42,8 +43,9 @@ function ContactForm() {
               />
             </div>
             <div className=" w-1/2">
-              <p className="text-greyLight pb-2">Email</p>
-              <label htmlFor="user_email" />{' '}
+              <label htmlFor="user_email">
+                <p className="text-greyLight pb-2">Email</p>
+              </label>
               <input
                 type="email"
                 name="user_email"
@@ -53,16 +55,21 @@ function ContactForm() {
               />
             </div>
           </div>
-          <div className="h-48 ">
+
+          <label htmlFor="message">
+            <p className="text-greyLight pb-2">Message</p>
+          </label>
+          <div className="h-48 mb-5">
             <textarea
               name="message"
               required
               className="w-full h-full rounded-md"
             />
           </div>
-          <div className="text-greyLight border">
-            <input type="submit" value="Send" />
-          </div>
+
+          <button className="rounded-lg w-full bg-greyMid text-greyLight py-1 hover:bg-accent hover:ease-in-out">
+            Send
+          </button>
         </form>
       </div>
     </section>
