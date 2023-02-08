@@ -27,7 +27,7 @@ function Home() {
         <p className="pt-5 text-greyLight max-w-5xl">
           I am a <b>Full Stack Web Developer</b> transitioning from a career as
           a head chef with a passion for creating innovative and visually
-          appealing digital experiences. I've always had a passion for
+          appealing digital experiences. I've always had an interest in
           technology and decided to take a leap of faith and make a career
           change. I graduated from Lighthouse Labs in 2022, where I went through
           an intensive and fast-paced training program for 12 weeks.
