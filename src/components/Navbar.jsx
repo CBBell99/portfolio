@@ -61,7 +61,7 @@ function Navbar() {
   // mobile menu
   const mobile = (
     <div
-      className={`w-full absolute top-0 right-[-3rem] bg-greyDark p-4 rounded-lg shadow-sm shadow-gray-500 mobile ${
+      className={`w-full absolute top-0 right-[-3rem] md:hidden bg-greyDark p-4 rounded-lg shadow-sm shadow-gray-500 mobile ${
         isOpen ? 'open' : ''
       }`}
     >
