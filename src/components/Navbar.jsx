@@ -66,11 +66,34 @@ function Navbar() {
       }`}
     >
       <ul className="mt-20 text-center flex flex-col gap-5">
-        <li className="text-4xl hover:text-accent">HOME</li>
-
-        <li className="text-4xl hover:text-accent ">PROJECTS</li>
-        <li className="text-4xl hover:text-accent">RESUME</li>
-        <li className="text-4xl hover:text-accent">CONTACT</li>
+        <li className="text-4xl hover:text-accent cursor-pointer">
+          <Link to="home" spy={true} offset={-75} duration={500} smooth={true}>
+            HOME
+          </Link>
+        </li>
+        <li className="text-4xl hover:text-accent cursor-pointer">
+          <Link
+            to="projects"
+            spy={true}
+            offset={-100}
+            duration={500}
+            smooth={true}
+          >
+            PROJECTS
+          </Link>
+        </li>
+        <a
+          href="https://resume.creddle.io/resume/20aimu9xvnb"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <li className="text-4xl hover:text-accent cursor-pointer">RESUME</li>
+        </a>
+        <li className="text-4xl hover:text-accent cursor-pointer">
+          <Link to="contact" offset={-75} duration={500} smooth={true}>
+            CONTACT
+          </Link>
+        </li>
       </ul>
       <div className="mt-8">
         <h2 className="text-center">FOLLOW ME ON</h2>
