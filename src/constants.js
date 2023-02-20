@@ -8,7 +8,7 @@ import loyaltree from "./images/loyaltree.png";
 const projects = [
   {
     name: 'loyalTree',
-    liveSite: 'https://loyal-tree-o4fwg0lqd-cbbell99.vercel.app/',
+    // liveSite: 'https://loyal-tree-o4fwg0lqd-cbbell99.vercel.app/',
     code: 'https://github.com/CBBell99/loyalTree',
     description:
       'Full-Stack Web Application for small businesses to conduct gift card transactions using QR codes and users to purchase digital gift cards',
