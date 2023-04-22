@@ -24,7 +24,6 @@ function ContactForm() {
 
   const submitHandler = () => {
     sendEmail();
-    console.log('success');
     setName('');
     setEmail('');
     setMessage('');
