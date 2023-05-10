@@ -2,13 +2,11 @@ import tinyapp from "./images/tinyapp.png";
 import githubFinder from "./images/githubFinder.png";
 import houseMarketplace from "./images/house-marketplace.png";
 import loyaltree from "./images/loyaltree.png";
-import pdfmerge from './images/pdf-merge.png';
-
-
+import pdfmerge from './images/pdfmerge.png';
 
 const projects = [
   {
-    name: 'PDF-Merge',
+    name: 'PDF Merge',
     // liveSite:
     code: 'https://github.com/CBBell99/pdf-merge',
     img: pdfmerge,
