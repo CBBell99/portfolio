@@ -5,12 +5,7 @@ import loyaltree from "./images/loyaltree.png";
 import pdfmerge from './images/pdfmerge.png';
 
 const projects = [
-  {
-    name: 'PDF Merge',
-    // liveSite:
-    code: 'https://github.com/CBBell99/pdf-merge',
-    img: pdfmerge,
-  },
+
   {
     name: 'loyalTree',
     // liveSite: 'https://loyal-tree-o4fwg0lqd-cbbell99.vercel.app/',
