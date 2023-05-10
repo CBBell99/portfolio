@@ -2,10 +2,17 @@ import tinyapp from "./images/tinyapp.png";
 import githubFinder from "./images/githubFinder.png";
 import houseMarketplace from "./images/house-marketplace.png";
 import loyaltree from "./images/loyaltree.png";
-import pdfmerge from './images/pdfmerge.png';
+import pdfMerge from './images/pdfMerge.png';
 
 const projects = [
-
+  {
+    name: 'PDF Merge',
+    // liveSite: 'https://loyal-tree-o4fwg0lqd-cbbell99.vercel.app/',
+    code: 'https://github.com/CBBell99/pdf-merge',
+    description:
+      'Front end application that takes multiple PDF files and combines them into a single file.  Handy for applying for jobs that require a resume and a cover letter in a single file',
+    img: pdfMerge,
+  },
   {
     name: 'loyalTree',
     // liveSite: 'https://loyal-tree-o4fwg0lqd-cbbell99.vercel.app/',
